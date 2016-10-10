@@ -8,43 +8,6 @@
 #include "Euclidean.h"
 using namespace std;
 using namespace arma;
-/*int mod2det(mat S)
-{
-	if(S.n_cols == 1)
-	{
-		unsigned int a = S(0,0);
-		return a%2;
-	}
-	if(S.n_cols > 1)
-	{
-		int result = 0;
-		mat temp1,temp2,temp;
-
-		int power = 1;
-		for (unsigned int i = 0; i < S.n_cols; ++i)
-		{
-			if(i==0)
-			{
-				temp = S(span(1,S.n_rows-1),span(1,S.n_cols-1));
-			}
-			if(i==S.n_cols-1)
-			{
-				temp = S(span(1,S.n_rows-1),span(0,S.n_cols-2));
-			}
-			if((i>0)&&(i<S.n_cols-1))
-			{
-				temp1 = S(span(1,S.n_rows-1),span(0,i-1));
-				temp2 = S(span(1,S.n_rows-1),span(i+1,S.n_cols-1));
-				temp = join_rows(temp1,temp2);
-			}
-			result += ((int)S(0,i))*det(temp)*power;
-			result = result % 2;
-			power = -power;
-		}
-		return result % 2;
-	}
-}*/
-
 mat MyMatrixMul(mat A, mat B, unsigned int p_x)
 {
 	mat C = zeros(A.n_rows,B.n_cols);
