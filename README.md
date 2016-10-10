@@ -26,7 +26,7 @@ This command decrypts the ciphertext in `cipher` and outputs the result to scree
 
 ## Installation
 
-This code require a c++ linear algebra library called armadillo. Installing Armadillo and type
+This code require a c++ linear algebra library called [armadillo](http://arma.sourceforge.net/download.html). Installing Armadillo and type
 ```
 make
 ``` 
